@@ -1,0 +1,78 @@
+---
+layout: none
+---
+
+$yellow: hsl(48deg, 100%, 50%)
+$blue: hsl(240deg, 100%, 20%)
+
+a
+  text-decoration: none
+  &:link, &:visited
+    color: $blue
+  &:hover, &:active, &:focus
+    color: desaturate(lighten($blue, 20%), 30%)
+
+body
+  font-family: "Bebas Neue Bold", Lato
+  margin: 0
+  padding: 0
+
+.site-header
+  background-image: url(https://unsplash.com/photos/9zsHNt5OpqE/download?force=true&w=1920)
+  background-size: cover
+  background-position: 50% 70%
+
+  display: flex
+  justify-content: center
+
+
+  > h1
+    padding: 6rem 7rem
+    background-color: rgba($yellow, 0.7)
+    text-transform: uppercase
+    margin: 3rem 4rem
+    backdrop-filter: blur(3px)
+
+.site-main
+  max-width: 40em
+  margin: auto
+
+ol
+  list-style: none
+  margin: 0
+  padding: 0
+  > li
+    padding: .3em .5em
+    font-weight: 600
+    + li
+      border-top: 2px dotted #ddd
+
+#button-wrapper
+  display: flex
+  justify-content: center
+
+a.button
+  display: block
+  margin: 4rem
+  padding: 2rem
+  font-size: 1.5rem
+  background-color: $yellow
+
+  display: flex
+  flex-direction: column
+
+  &:hover
+    box-shadow: 2px 2px 3px #ddd
+
+  > span
+    font-weight: bold
+  > small
+    color: #666
+
+.site-footer
+  background-color: $blue
+  text-align: center
+  padding: 2rem
+
+  a:link
+    color: #ddd
