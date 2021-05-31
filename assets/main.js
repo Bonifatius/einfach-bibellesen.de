@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let now = new Date();
   now.setDate(now.getDate() + 7);
-  let month = now.getMonth();
+  let month = now.getMonth() + 1; // getMonth is zero-based
   if (month < 10) {
     month = "0" + month.toString();
   }
