@@ -79,3 +79,15 @@ a.button
 
   a:link, a:visited, a:hover, a:active, a:focus
     color: #ddd
+
+.video-wrapper
+  position: relative
+  padding-bottom: calc(var(--aspect-ratio, .5625) * 100%) // 56.25% == 16:9
+  height: 0
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
