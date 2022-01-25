@@ -4,6 +4,7 @@ layout: none
 
 $yellow: hsl(48deg, 100%, 50%)
 $blue: hsl(240deg, 100%, 20%)
+$lightbg: hsl(0deg, 0%, 90%)
 
 a
   text-decoration: none
@@ -40,6 +41,9 @@ body
   max-width: 40em
   margin: auto
 
+.site-top
+  background-color: $lightbg
+
 ol
   list-style: none
   margin: 0
@@ -51,12 +55,15 @@ ol
       border-top: 2px dotted #ddd
 
 #button-wrapper
-  display: flex
-  justify-content: center
+  padding: 2rem
+  max-width: 40em
+  margin: auto
+  h3
+    text-align: center
 
 a.button
   display: block
-  margin: 4rem
+  margin: 2rem
   padding: 2rem
   font-size: 1.5rem
   background-color: $yellow
