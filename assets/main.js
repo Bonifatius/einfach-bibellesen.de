@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   button.appendChild(label);
 
   let all_plans = document.getElementById("all-plans");
-  let current_plan = all_plans.children[now.getMonth()];
+  let current_plan = all_plans.querySelector(`[data-month="${now.getMonth() + 1}"]`) || all_plans.children[now.getMonth()];
 
   let download_url = current_plan.querySelector("a[href$=\".pdf\"]").href;
   button.href = download_url;
